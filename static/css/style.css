@@ -3,7 +3,7 @@
     height: 100%;
     font-family: "Exo 2", San Serif;
     margin: 0;
-    color: #93B1A6;
+    color: #5C8374;
 }
 .container {
     height: 100%;
@@ -15,10 +15,11 @@
 }
 .uploadContainer {
     max-width: 40%;
-    max-height: 60%;
+    max-height: calc(60% - 60px);
     background-color: #183D3D;
     border-radius: 20px;
     text-align: center;
+    padding: 40px 0;
 }
 
 .uploadBtn {
@@ -28,13 +29,39 @@
     min-height: 50px;
     max-height: 80px;
     border-radius: 10px;
+    background: #5C8374;
+    border: 0px solid;
+    cursor: pointer;
 }
 .uploadIcons {
     font-size: 64px;
+    width: auto;
+    height: auto;
 }
 .uploadText {
     width: auto;
     height: auto;
     font-weight: bold;
     font-size: 24px;
+    color: #5C8374;
+}
+.uploadBtn:hover {
+    max-width: 40%;
+    min-width: 130px;
+    height: 10%;
+    min-height: 50px;
+    max-height: 80px;
+    border-radius: 10px;
+    background: #040D12;
+    border: 0px solid;
+}
+.uploadBtn:hover .uploadBtnText {
+    color: #5C8374;
+    font-weight: bold;
+    font-size: 16px;
+}
+.uploadBtnText {
+    color: #040D12;
+    font-weight: bold;
+    font-size: 16px;
 }
