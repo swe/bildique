@@ -32,6 +32,10 @@
     background: #5C8374;
     border: 0px solid;
     cursor: pointer;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
 }
 .uploadIcons {
     font-size: 64px;
@@ -44,6 +48,10 @@
     font-weight: bold;
     font-size: 24px;
     color: #5C8374;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
 }
 .uploadBtn:hover {
     max-width: 40%;
