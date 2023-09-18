@@ -1,0 +1,40 @@
+* {
+    width: 100%;
+    height: 100%;
+    font-family: "Exo 2", San Serif;
+    margin: 0;
+    color: #93B1A6;
+}
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #040D12;
+}
+.uploadContainer {
+    max-width: 40%;
+    max-height: 60%;
+    background-color: #183D3D;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.uploadBtn {
+    max-width: 40%;
+    min-width: 130px;
+    height: 10%;
+    min-height: 50px;
+    max-height: 80px;
+    border-radius: 10px;
+}
+.uploadIcons {
+    font-size: 64px;
+}
+.uploadText {
+    width: auto;
+    height: auto;
+    font-weight: bold;
+    font-size: 24px;
+}
