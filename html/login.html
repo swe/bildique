@@ -5,7 +5,7 @@
     <meta name="description" content="description">
     <title>bildique | your self-hosted media server</title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="../static/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../static/favicon/apple-icon-180x180.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../static/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../static/favicon/favicon-16x16.png">
 
@@ -17,9 +17,10 @@
     <div class="container">
     	<div class="uploadContainer">
                 <p class="uploadIcons">⚠️ 🙈 🔒</p>
-                <p class="uploadText">Enter the secret to continue:</p>
-                <input type="password" class="secretInput">
-                <input type="button" class="uploadBtn" value="Unlock"></input>
+                <label for="accessSecret" class="uploadText">Enter the secret to continue:</label>
+                <input id="accessSecret" type="password" class="secretInput">
+                
+                <input id="loginButton" type="button" class="uploadBtn" value="Unlock">
         </div>
     </div>
 </body>
