@@ -1,0 +1,17 @@
+global:
+    host: 0.0.0.0
+    port: 8118
+    base_url: "http://0.0.0.0:8118/"  # trailing slash is important
+    secret_code: "VerySecr3tPas$w0rd!" # secret word to protect you from strangers (don't use your password here, it's stored as plain text)
+
+storage:
+    dir: uploads/
+    store_originals: false
+    original_length: 1500
+    auto_convert: false
+    jpeg_quality: 100
+
+meta:
+    blocks:
+        - title: "URL"
+          template: "{{ file.Url }}"
