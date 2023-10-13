@@ -14,12 +14,17 @@
     background-color: #040D12;
 }
 .uploadContainer {
-    max-width: 40%;
+    max-width: calc(40% - 80px);
     max-height: calc(60% - 60px);
     background-color: #183D3D;
     border-radius: 20px;
     text-align: center;
-    padding: 40px 0;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 380px;
 }
 
 .uploadBtn {
@@ -36,22 +41,38 @@
     -o-transition: all .2s ease-in;
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
+    display: flex;
+    color: #040D12;
+    font-weight: bold;
+    font-size:24px;
 }
 .uploadIcons {
     font-size: 64px;
     width: auto;
     height: auto;
+    display: flex;
 }
 .uploadText {
     width: auto;
     height: auto;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 26px;
     color: #5C8374;
     -moz-transition: all .2s ease-in;
     -o-transition: all .2s ease-in;
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
+    display: flex;
+}
+.secretInput {
+    max-height: 40px;
+    width: 40%;
+    min-width: 50px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding: 0 20px;
+    display: flex;
 }
 .uploadBtn:hover {
     max-width: 40%;
@@ -62,14 +83,7 @@
     border-radius: 10px;
     background: #040D12;
     border: 0px solid;
-}
-.uploadBtn:hover .uploadBtnText {
     color: #5C8374;
     font-weight: bold;
-    font-size: 16px;
-}
-.uploadBtnText {
-    color: #040D12;
-    font-weight: bold;
-    font-size: 16px;
+    font-size:24px;
 }
