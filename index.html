@@ -12,16 +12,25 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2">
     <link href="static/css/style.css" rel="stylesheet">
 
+    <script>
+        window.onload=function() {
+            const actualBtn = document.getElementById('fileUpload');
+            const fileChosen = document.getElementById('uploadBtnTxt');
+
+            actualBtn.addEventListener('change', function(){
+                fileChosen.textContent = this.files[0].name
+            })
+        }
+    </script>
+
 </head>
 <body>
     <div class="container">
     	<div class="uploadContainer">
             <p class="uploadIcons">🎥 🖼️ 🗂️</p>
             <p class="uploadText">Click button below to upload<br/>↓↓↓</p>
-            <label for="file-upload" class="uploadBtn">
-            <input id="file-upload" type="file">
-                {{ Upload Text}}
-            </label>
+            <input id="fileUpload" type="file" hidden/>
+            <label id="uploadBtnTxt" for="fileUpload" class="uploadBtn">Upload</label>
         </div>
     </div>
 </body>
