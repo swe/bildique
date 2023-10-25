@@ -15,13 +15,27 @@
 </head>
 <body>
     <div class="container">
-    	<div class="uploadContainer">
+    	<form id="LoginContainer" class="uploadContainer">
                 <p class="uploadIcons">⚠️ 🙈 🔒</p>
                 <label for="accessSecret" class="uploadText">Enter the secret to continue:</label>
                 <input id="accessSecret" type="password" class="secretInput" autofocus>
                 
                 <input id="loginButton" type="button" class="uploadBtn" value="Unlock">
-        </div>
+        </form>
     </div>
 </body>
+<script>
+    const submitClicked = document.getElementById('loginButton');
+
+    submitClicked.addEventListener("click", function(e) {
+
+    e.preventDefault();
+
+    const secret = document.getElementById('accessSecret');
+
+    if (secret.value === 'VerySecr3tPas$w0rd!') {
+        window.location = "../index.html";
+    }
+});
+</script>
 </html>

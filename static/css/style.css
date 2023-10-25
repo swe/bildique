@@ -12,12 +12,12 @@
     justify-content: center;
     align-items: center;
     background-color: #040D12;
-    background-image: url("../images/dust.svg");
+    background-image: url("../images/windy.svg");
     background-size: cover;
 }
 .uploadContainer {
-    max-width: calc(40% - 80px);
-    max-height: calc(60% - 60px);
+    max-width: calc(30% - 80px);
+    max-height: calc(40% - 60px);
     background-color: #183D3D;
     border-radius: 20px;
     text-align: center;
