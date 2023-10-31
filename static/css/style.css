@@ -50,7 +50,6 @@
     text-align: center;
 }
 .uploadBtn {
-    max-width: 40%;
     min-width: 130px;
     height: 10%;
     min-height: 50px;
@@ -70,6 +69,7 @@
     line-height: 50px;
     text-align: center;
     vertical-align: middle;
+    overflow: hidden;
 }
 .uploadIcons {
     font-size: 64px;
@@ -117,7 +117,6 @@ input[type="file"] {
     font-size:24px;
 }
 .uploadBtn:hover {
-    max-width: 40%;
     min-width: 130px;
     height: 10%;
     min-height: 50px;
