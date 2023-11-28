@@ -20,22 +20,31 @@
                 <label for="accessSecret" class="uploadText">Enter the secret to continue:</label>
                 <input id="accessSecret" type="password" class="secretInput" autofocus>
                 
-                <input id="loginButton" type="button" class="uploadBtn" value="Unlock">
+                <input id="loginButton" type="button" class="mainBtn" value="Unlock">
         </form>
     </div>
 </body>
 <script>
-    const submitClicked = document.getElementById('loginButton');
+let input = document.getElementById("accessSecret");
+input.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        console.log('pipirka')
+        event.preventDefault();
+        document.getElementById("loginButton").click();
+    }
+});
 
-    submitClicked.addEventListener("click", function(e) {
+const submitClicked = document.getElementById('loginButton');
+submitClicked.addEventListener("click", function(e) {
 
     e.preventDefault();
 
     const secret = document.getElementById('accessSecret');
 
     if (secret.value === 'VerySecr3tPas$w0rd!') {
-        window.location = "../index.html";
+        window.location = "https://i.alleksy.com/upload";
     }
 });
+
 </script>
 </html>
