@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=utf-8>
+    <meta name="description" content="description">
+    <title>bildique · your uploaded media</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../static/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../static/favicon/favicon-16x16.png">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2">
+    <link href="../static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+        	<div class="logo">
+        		<div class="img">
+                    <img src="../static/favicon/apple-icon-180x180.png" alt="">
+                </div>
+        		<h1 class="logoText">bildique</h1>
+        	</div>
+            <div class="uploadLink">
+                <input id="loginButton" type="button" class="linkBtn" value="Upload">
+            </div>
+        </div>
+        <div class="filesContainer">
+            <div class="filesInner">
+                <h1 class="filesTitle">Your uploaded media</h1>
+
+                <div class="fileCard">
+                    <img class="filePreview" src="https://www.butsa.ru/images/ut_teams/logo/10414.jpg" alt="">
+                    <div class="urlWrapper">
+                        <input type="text" class="fileUrl" id="fileLink" value="fkdjaklasdjasddasasddasasdasdaaaaasdflkasdjfaa" readonly />
+                        <label for="fileLink" class="fileLinkText">Copy</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+document.getElementById("fileLink").onclick = function() {
+    this.select();
+    document.execCommand('copy');
+    alert('File URL has been copied..');
+}
+</script>
+</html>
